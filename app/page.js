@@ -7,6 +7,8 @@ import SciFiDashboard from "@/components/Background/page";
 import ScrollReveal from "@/components/ScrolRevel/page";
 import Navbar from "@/components/Navbar/page";
 import { ReactTyped } from "react-typed";
+import Skills from "@/components/Skill/page";
+import { ContactF } from "@/components/Contact/page";
 
 
 export default function Home() {
@@ -66,7 +68,7 @@ export default function Home() {
       <hr className={styles.liquidhr} />
       <section id="skill" className={styles.Skill}>
         <ScrollReveal>
-          {/* <Skills /> */}
+          <Skills />
         </ScrollReveal>
       </section>
       <hr className={styles.liquidhr} />
@@ -76,7 +78,7 @@ export default function Home() {
       <hr className={styles.liquidhr} />
       <section id="contact" className={styles.Contact}>
         <ScrollReveal>
-          {/* <ContactF /> */}
+          <ContactF />
         </ScrollReveal>
       </section>
       <div

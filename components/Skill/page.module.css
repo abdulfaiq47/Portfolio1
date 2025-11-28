@@ -1,0 +1,81 @@
+.skillsSection {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #00aaff;
+}
+
+.text {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.skillData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skillName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 30%;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #00aaff;
+}
+
+.barWrapper {
+  flex: 1;
+  height: 6px;
+  margin: 0 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 1.2s ease-in-out;
+}
+
+.percent {
+  font-weight: 500;
+  width: 50px;
+  text-align: right;
+}
+
+/* individual bar colors */
+.html {
+  background: linear-gradient(90deg, #e34f26, #f06529);
+}
+
+.js {
+  background: linear-gradient(90deg, #f7df1e, #f0db4f);
+}
+
+.react {
+  background: linear-gradient(90deg, #61dafb, #21a1f1);
+}
+
+.native {
+  background: linear-gradient(90deg, #61dafb, #1e90ff);
+}
