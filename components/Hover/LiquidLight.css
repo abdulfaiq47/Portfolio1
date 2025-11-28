@@ -1,0 +1,37 @@
+.background-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.liquid-container {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  background: transparent;
+}
+
+.liquid-content,
+.liquid-mask {
+  position: absolute;
+  inset: 0;
+}
+
+.liquid-mask {
+  pointer-events: none;
+  background: radial-gradient(
+    200px circle at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0) 0%,
+    #05040af8 80%
+  );
+  transition: background 0.1s ease-out;
+  mix-blend-mode: multiply;
+  height: 688px;
+}
+
+@media (max-width: 480px) {
+  .liquid-mask {
+    height: 150vh;
+  }
+}
