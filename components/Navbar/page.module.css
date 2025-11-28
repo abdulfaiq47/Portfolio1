@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
+
+.Navbar {
+  padding: 11px 31px 13px 30px;
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    border-radius: 23px;
+
+  border: 0.2px solid hsl(0, 0%, 100%, 0.3);
+  color: white;
+  background: rgb(62 61 61 / 20%);
+  backdrop-filter: blur(2px);
+  box-shadow: inset 0 0 8px 1px hsl(0, 0%, 100%, 0.3);
+    z-index: 20;
+  left: 8%;
+  top: 1%;
+}
+.Faiq {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Navbar ul {
+  display: flex;
+  gap: 93px;
+}
+
+.Navbar ul li {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  list-style: none;
+}
+
+.Navbar ul li button {
+  font-family: var(--font-oswald), sans-serif;
+  letter-spacing: 0.8px;
+  color: #f1f1f1;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.underlineAnimation {
+  position: relative;
+  text-decoration: none;
+}
+
+.underlineAnimation::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-25%);
+}
+
+.underlineAnimation:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+

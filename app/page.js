@@ -5,13 +5,15 @@ import styles from "./page.module.css";
 import GradualBlur from "@/components/BottBlur/page";
 import SciFiDashboard from "@/components/Background/page";
 import ScrollReveal from "@/components/ScrolRevel/page";
+import Navbar from "@/components/Navbar/page";
+import { ReactTyped } from "react-typed";
 
 
 export default function Home() {
   return (
     <>
       {/*  */}
-      {/* <Navbar /> */}
+      <Navbar />
       <section id="main" className={styles.Main}>
         <div className={styles.HomeAB}>
           <ScrollReveal>
@@ -23,7 +25,7 @@ export default function Home() {
                   I&apos;m <span className={styles.AbFaiq}>Abdul Faiq</span>
                 </h2>
 
-                {/* <ReactTyped
+                <ReactTyped
                   strings={[
                     "Web Developer",
                     "Frontend Developer",
@@ -32,10 +34,10 @@ export default function Home() {
                   typeSpeed={40}
                   backSpeed={50}
                   loop
-                /> */}
+                />
               </div>
               <div className={styles.FaiqImg}>
-                {/* <Image
+                <Image
                   className={styles.ImgBack}
                   src="/img back.png"
                   width={100}
@@ -48,7 +50,7 @@ export default function Home() {
                   width={100}
                   height={100}
                   alt="Faiq"
-                /> */}
+                />
               </div>
             </div>
           </ScrollReveal>
